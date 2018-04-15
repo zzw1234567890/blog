@@ -1,0 +1,27 @@
+<script src="jquery.min.js"></scriptsrc>
+<style>
+body {
+  padding-top: 100px;
+}
+div.fixed {
+  width: 100%; height: 50px;
+  background-color: #333;
+
+}
+</style>
+<body>
+
+<div class="fixed">123</div>
+<div style="height: 1000px">1</div>
+</body>
+
+
+
+
+<script>
+$(window).scroll(function () {
+  if($(window).offsetTop() > 100px) {
+    $('div.fixed').css('display', 'fixed');
+  }
+})
+</script>
