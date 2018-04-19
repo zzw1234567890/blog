@@ -1,0 +1,127 @@
+div.main {
+  max-width: 1200px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+div.main div.left-side {
+  float: left;
+  width: 100%;
+}
+div.left-side > div.article-content {
+  margin-right: 250px;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  position: relative;
+  padding: 10px 0;
+  background-color: #fff;
+}
+div.article-content header.article-header {
+
+}
+header.article-header div.article-info {
+  padding: 10px 10px 20px 10px;
+  font-size: 14px;
+  overflow: hidden;
+}
+/* 文章信息 */
+div.article-info strong,
+div.article-info a{
+  padding: 3px 10px;
+  color: #888;
+  font-weight: normal;
+}
+div.article-info a {
+  float: right;
+  margin-left: 5px;
+  border: 1px solid #ddd;
+}
+div.article-info i.fa {
+  margin-right: 5px;
+}
+
+div.left-side section.article-text {
+  padding: 20px;
+}
+/*markdown样式*/
+/*h1*/
+section.article-text > * {
+  margin-bottom: 20px;
+  display: block;
+}
+header.article-header > h1,
+section.article-text > h2,
+section.article-text > h3 {
+  padding: 5px 0;
+  text-indent: 15px;
+  position: relative;
+  background-color: #efefef;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 5px 0 0 #e36163 inset;
+}
+header.article-header > h1 { font-size: 26px; }
+section.article-text > h2 { font-size: 20px; }
+section.article-text > h3 { font-size: 16px; }
+section.article-text > blockquote {
+  line-height: 1.618em;
+  letter-spacing: 1px;
+  box-shadow: 0 -4px 0 #e36163;
+  border: 1px solid #e36163;
+  padding: 10px;
+}
+section.article-text > p a {
+  color: #4183c4;
+  box-shadow: 0 1px 0 #4183c4;
+}
+section.article-text > img {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+/* 右侧 */
+div.main  aside.right-side {
+  float: right;
+  width: 240px;
+  margin-left: -240px;
+}
+
+
+
+/* media */
+/* 横屏 */
+@media screen and (orientation:landscape){
+}
+/* 竖屏 */
+@media screen and (orientation:portrait){
+}
+/* 窗口宽度<960,设计宽度=768 */
+@media screen and (max-width:959px){
+  div.left-side > div {
+    width: 100%;
+  }
+  div.main aside.right-side {
+    width: 0;
+    overflow: hidden;
+  }
+}
+/* 窗口宽度<768,设计宽度=640 */
+@media screen and (max-width:767px){
+}
+/* 窗口宽度<640,设计宽度=480 */
+@media screen and (max-width:639px){
+}
+/* 窗口宽度<480,设计宽度=320 */
+@media screen and (max-width:479px){
+}
+/* windows UI 贴靠 */
+@media screen and (-ms-view-state:snapped){
+}
+/* 打印 */
+@media print{
+}
